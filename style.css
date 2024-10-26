@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 10px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(222, 26%, 31%);
+    transition: 0.2s ease-in;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.calculator-container {
+    justify-self: center;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    font-family: "League Spartan", serif;
+    font-weight: 700;
+}
+
+/*Head Section styling */
+.head-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.title {
+    margin-left: 5px;
+}
+/* Toggle Caliberation section stylings. */
+.toggle-caliberation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 13px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.last-caliberation {
+    margin-right: 8px;
+}
+/*Title and toggle sections styling. */
+.title-and-toggle-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.title-and-toggle-section > p {
+    font-size: 10px;
+    margin-right: 20px;
+}
+p.title {
+    font-size: 24px;
+    margin-right: auto;
+}
+/* Toggle styling. */
+.toggle {
+    position: relative;
+    border: 4px solid hsl(223, 31%, 20%);
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: ce;
+}
+
+.toggle > input {
+    display: none;
+}
+.toggler {
+    margin: 0;
+    border: 0;
+    width: 16px;
+    height: 12px;
+    cursor: pointer;
+    /* background-color: white; */
+}
+.toggle-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: hsl(6, 63%, 50%);
+    top: 0;
+    left: 0%;
+    transition: transform 0.3s ease;
+}
+/* #toggle-option1:checked ~ .toggle-indicator{
+    transform: translateX(0);
+}
+#toggle-option2:checked ~ .toggle-indicator{
+    transform: translateX(150%);
+}
+#toggle-option3:checked ~ .toggle-indicator{
+    transform: translateX(300%);
+} */
+
+/* Screen styling. */
+.screen {
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    background-color: hsl(224, 36%, 15%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* keypad styling. */
+.keypad {
+    width: 100%;
+    height: 320px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.key {
+    font-family: "League Spartan", serif;
+    font-weight: 700;
+    font-size: 28px;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 3px hsl(28, 16%, 65%);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+#btn-del, #btn-reset {
+    background-color: hsl(225, 21%, 49%);
+    font-size: 20px;
+    color: hsl(30, 25%, 89%);
+    box-shadow: 0 3px hsl(224, 28%, 35%);
+}
+#btn-reset, #btn-equalto {
+    grid-column: span 2;
+}
+#btn-equalto {
+    font-size: 24px;
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(30, 25%, 89%);
+    box-shadow: 0 3px hsl(25, 99%, 27%);
+}
+
+#btn-0:active, #btn-1:active, #btn-2:active, #btn-3:active, #btn-4:active, #btn-5:active, #btn-6:active, #btn-7:active, #btn-8:active, #btn-9:active, #btn-del:active, #btn-reset:active, #btn-equalto:active, #btn-plus:active, #btn-minus:active, #btn-multiply:active, #btn-divide:active, #btn-point:active{
+    box-shadow: 0 0;
+    transform: translateY(3px);
+}
+footer {
+    margin-top: 30px;
+    color: hsl(30, 25%, 89%);
+}

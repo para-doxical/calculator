@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!--Style Sheet Link-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="head-section">
+            <div class="toggle-caliberation"><p>1</p><p>2</p><p class="last-caliberation">3</p></div>
+            <div class="title-and-toggle-section">
+                <p class="title">calc</p>
+                <p>THEME</p>
+                <!--toggle-->
+                <div class="toggle">
+                    <input type="radio" id="toggle-option1" name="toggle-option">
+                    <label for="toggle-option1" class="toggler"></label>
+
+                    <input type="radio" id="toggle-option2" name="toggle-option">
+                    <label for="toggle-option2" class="toggler"></label>
+
+                    <input type="radio" id="toggle-option3" name="toggle-option">
+                    <label for="toggle-option3" class="toggler"></label>
+                    <div class="toggle-indicator"></div>
+                </div>
+    
+            </div>
+        </div>
+        <!--Screen section-->
+        <div class="screen"><p id="screen-text">0</p></div>
+        <!--keypad section-->
+        <div class="keypad">
+            <button id="btn-7" onclick="click7()" class="key">7</button>
+            <button id="btn-8" onclick="click8()" class="key">8</button>
+            <button id="btn-9" onclick="click9()" class="key">9</button>
+            <button id="btn-del" onclick="clickDel()" class="key">DEL</button>
+            <button id="btn-4" onclick="click4()" class="key">4</button>
+            <button id="btn-5" onclick="click5()" class="key">5</button>
+            <button id="btn-6" onclick="click6()" class="key">6</button>
+            <button id="btn-plus" onclick="clickPlus()" class="key">+</button>
+            <button id="btn-1" onclick="click1()" class="key">1</button>
+            <button id="btn-2" onclick="click2()" class="key">2</button>
+            <button id="btn-3" onclick="click3()" class="key">3</button>
+            <button id="btn-minus" onclick="clickMinus()" class="key">-</button>
+            <button id="btn-point" onclick="clickPoint()" class="key">.</button>
+            <button id="btn-0" onclick="click0()" class="key">0</button>
+            <button id="btn-divide" onclick="clickDivide()" class="key">÷</button>
+            <button id="btn-multiply" onclick="clickMultiply()" class="key">x</button>
+            <button id="btn-reset" onclick="clickReset()" class="key">RESET</button>
+            <button id="btn-equalto" onclick="clickEqualto()" class="key">=</button>
+            
+        </div>
+    </div>
+    <footer>Designed by @ Bamidele Oluwatosin [paradoxical]</footer>
+    <!--Scripting link.-->
+    <script src="./script.js"></script>
+</body>
+</html>
